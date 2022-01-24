@@ -6,7 +6,7 @@ desktop:
 
 apps:
 	sudo pacman -S git unzip lxappearance pulseaudio bluez pavucontrol alacritty firefox thunar spectacle virtualbox #repo 2 for virtualbox
-
+	sudo modprobe vboxdrv # might need this for virtualbox
 lang:
 	sudo pacman -S npm jdk-openjdk python-pip
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
