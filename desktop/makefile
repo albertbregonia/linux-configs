@@ -5,7 +5,7 @@ desktop:
 	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia 	
 
 apps:
-	sudo pacman -S git unzip lxappearance pulseaudio bluez pavucontrol alacritty firefox thunar spectacle 
+	sudo pacman -S git unzip lxappearance pulseaudio bluez pavucontrol alacritty firefox thunar spectacle virtualbox #repo 2 for virtualbox
 
 lang:
 	sudo pacman -S npm jdk-openjdk python-pip
