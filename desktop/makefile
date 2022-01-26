@@ -5,10 +5,10 @@ desktop:
 	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia 	
 
 apps:
-	sudo pacman -S git unzip lxappearance pulseaudio bluez pavucontrol alacritty firefox thunar spectacle virtualbox #repo 2 for virtualbox
+	sudo pacman -S git unzip lxappearance pulseaudio bluez pavucontrol alacritty firefox thunar spectacle virtualbox # repo 2 for virtualbox
 	sudo modprobe vboxdrv # might need this for virtualbox
 lang:
-	sudo pacman -S npm jdk-openjdk python-pip
+	sudo pacman -S npm jdk-openjdk python-pip openssl openssh # c/c++/python is already installed, install java, pip, nodejs, TLS and SSH
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	pip install psutil
 
@@ -22,7 +22,7 @@ aur:
 	
 	cd ~/snapd && makepkg -si
 	systemctl enable --now snapd.socket
-	sudo ln -s /var/lib/snapd/snap /snap #classic support
+	sudo ln -s /var/lib/snapd/snap /snap # classic support
 
 	#install desired apps
 	cd ~/consolas-font && makepkg -si
