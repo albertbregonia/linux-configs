@@ -40,5 +40,9 @@ snap:
 wifi:
 	nmcli d wifi connect BREGONIA password albertbregonia4173
 
+opencv:
+	sudo pacman -Syyu
+	sudo pacman -S opencv fmt hdf5 glew pugixml protobuf openmpi vtk
+
 clean:
 	rm -rf consolas-font/ snapd/ picom-jonaburg-git/ minecraft-launcher/
