@@ -5,7 +5,7 @@ desktop:
 	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia 	
 
 apps:
-	sudo pacman -S git unzip lxappearance pulseaudio bluez pavucontrol alacritty firefox thunar spectacle virtualbox vlc # repo 2 for virtualbox
+	sudo pacman -S git unzip cmake lxappearance pulseaudio bluez pavucontrol alacritty firefox thunar spectacle virtualbox vlc # repo 2 for virtualbox
 	sudo modprobe vboxdrv # might need this for virtualbox
 lang:
 	sudo pacman -S npm jdk-openjdk python-pip openssl openssh # c/c++/python is already installed, install java, pip, nodejs, TLS and SSH
