@@ -5,7 +5,7 @@ desktop:
 	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia sof-firmware # sof-firmware is for detecting audio driver
 
 apps:
-	sudo pacman -S git unzip cmake lxappearance pulseaudio alsa-utils bluez alsa-utilspavucontrol alacritty firefox thunar thunar-volman gvfs spectacle virtualbox vlc tigervnc # repo 2 for virtualbox
+	sudo pacman -S git unzip cmake lxappearance pulseaudio alsa-utils bluez pavucontrol alacritty firefox thunar thunar-volman gvfs spectacle virtualbox vlc tigervnc # repo 2 for virtualbox
 	sudo modprobe vboxdrv # might need this for virtualbox
 lang:
 	sudo pacman -S npm jdk-openjdk python-pip openssl openssh # c/c++/python is already installed, install java, pip, nodejs, TLS and SSH
