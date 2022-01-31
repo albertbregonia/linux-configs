@@ -2,7 +2,7 @@
 default: desktop apps lang aur snap
 
 desktop:
-	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia 	
+	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia sof-firmware # sof-firmware is for detecting audio driver
 
 apps:
 	sudo pacman -S git unzip cmake lxappearance pulseaudio alsa-utils bluez alsa-utilspavucontrol alacritty firefox thunar thunar-volman gvfs spectacle virtualbox vlc tigervnc # repo 2 for virtualbox
