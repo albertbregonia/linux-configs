@@ -2,7 +2,7 @@
 default: desktop apps lang aur snap
 
 desktop:
-	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia sof-firmware # sof-firmware is for detecting audio driver
+	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia
 
 apps:
 	sudo pacman -S git unzip cmake lxappearance pulseaudio alsa-utils bluez pavucontrol alacritty firefox thunar thunar-volman gvfs spectacle virtualbox vlc tigervnc # repo 2 for virtualbox
@@ -43,6 +43,11 @@ wifi:
 opencv:
 	sudo pacman -Syyu
 	sudo pacman -S opencv fmt hdf5 glew pugixml protobuf openmpi vtk
+	
+audio: # i need to do this for my hp spectre's audio to work
+	sof-firmware # sof-firmware is for detecting audio driver
+	sudo echo 'blacklist snd_hda_intel' > /etc/modprobe.d/blacklist.conf
+	sudo echo 'blacklist snd_soc_skl' >> /etc/modprobe.d/blacklist.conf
 
 clean:
 	rm -rf consolas-font/ snapd/ picom-jonaburg-git/ minecraft-launcher/
