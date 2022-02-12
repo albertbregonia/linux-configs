@@ -12,6 +12,9 @@ lang:
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	pip install psutil
 
+mcu: # tinygo and AVR compiler/libs
+	sudo pacman -S avr-gcc avr-libc avrdude tinygo 
+
 aur:
 	# install snapd
 	cd ~
