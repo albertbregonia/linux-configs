@@ -3,7 +3,7 @@ default: desktop apps lang aur snap
 
 desktop:
 	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia
-
+	xset s off # disable screen timeout
 apps:
 	sudo pacman -S git unzip cmake lxappearance pulseaudio alsa-utils bluez pavucontrol alacritty firefox thunar thunar-volman gvfs spectacle virtualbox vlc tigervnc # repo 2 for virtualbox
 	sudo modprobe vboxdrv # might need this for virtualbox
