@@ -8,6 +8,7 @@
 alias py='python'
 alias ls='ls --color=auto'
 alias file='thunar'
+alias inet='firefox'
 alias config='code ~/Code/config.code-workspace'
 PS1='\[\033[01;36m\]┌──\[\033[01;35m\] <\u㉿\h> \[\033[01;36m\][\W]\n└─> \[\033[00m\]'
 
