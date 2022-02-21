@@ -1,9 +1,9 @@
 .PHONY: default desktop apps lang aur snap wifi clean
 default: desktop apps lang aur snap
 
-desktop:
+desktop: # xset s off -> disable screen timeout
 	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia
-	xset s off # disable screen timeout
+
 apps:
 	sudo pacman -S git unzip cmake lxappearance pulseaudio pulseaudio-bluetooth alsa-utils bluez bluez-utils pavucontrol alacritty firefox thunar thunar-volman gvfs spectacle virtualbox vlc tigervnc # repo 2 for virtualbox
 	sudo modprobe vboxdrv # might need this for virtualbox
