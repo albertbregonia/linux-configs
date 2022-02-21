@@ -1,5 +1,5 @@
-.PHONY: default desktop apps lang aur snap wifi clean
-default: desktop apps lang aur snap
+.PHONY: default desktop apps lang aur snap wifi opencv audio clean
+default: desktop apps lang aur
 
 desktop: # xset s off -> disable screen timeout
 	sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xprop qtile noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto nvidia
